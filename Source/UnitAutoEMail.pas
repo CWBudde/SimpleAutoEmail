@@ -154,7 +154,7 @@ begin
   begin
     try
       Rootkey := HKEY_CURRENT_USER;
-      if OpenKey('Software\GTA\AutoEmail', False) then
+      if OpenKey('Software\SimpleAutoEmail\AutoEmail', False) then
       begin
         ComboBoxSecurity.ItemIndex := ReadInteger('Security');
         EditHost.Text := ReadString('Host');
